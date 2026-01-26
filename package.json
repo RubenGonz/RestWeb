@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "tsnd --respawn --clear src/app.ts",
-  "postinstall": "prisma generate",
-  "build": "prisma generate && rimraf ./dist && tsc",
-  "start": "prisma migrate deploy && node dist/app.js"
-}
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "postinstall": "prisma generate",
+    "build": "prisma generate && rimraf ./dist && tsc",
+    "start": "prisma migrate deploy && node dist/app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
