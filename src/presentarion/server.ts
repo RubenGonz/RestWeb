@@ -2,7 +2,7 @@ import express, { Router } from 'express';
 import path from 'path';
 
 interface Options {
-  port: number
+  port?: number
   routes: Router
   publicPath?: string
 }
@@ -15,7 +15,8 @@ export class Server {
 
   constructor(options: Options) {
     const { port, routes, publicPath = "public" } = options
-    this.port = port
+
+    this.port = port ?? 3000
     this.routes = routes
     this.publicPath = publicPath
   }
