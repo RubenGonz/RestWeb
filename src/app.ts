@@ -1,6 +1,6 @@
 import { envs } from "./config/envs"
-import { AppRoutes } from "./presentarion/routes"
-import { Server } from "./presentarion/server"
+import { AppRoutes } from "./presentation/routes"
+import { Server } from "./presentation/server"
 
 (() => {
   main()
